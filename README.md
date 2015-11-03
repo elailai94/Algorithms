@@ -1,2 +1,3 @@
 # Algorithms
-Data Structures & Algorithms
+### About
+Here's a small selection of a
