@@ -24,14 +24,14 @@ string splitDirections[] = {"Vertical", "Horizontal"};
 // of medians algorithm
 int choosePivot(vector< pair<pair<int, int>, int> > &points) {
    if (points.size() <= 5) {
-   	  return points[(points.size() / 2)].second;
+      return points[(points.size() / 2)].second;
    } else {
       const int m = ((points.size() / 5) - 1);
 
       // Creates a vector of medians from vectors of 5 points
       vector< pair< pair<int, int>, int> > medians;
       for (int i = 0; i <= m; i++) {
-   	     // Creates a vector of 5 points
+   	 // Creates a vector of 5 points
          vector< pair<pair<int, int>, int> > pointsGroup;
          for (int j = (5 * i); (j < ((5 * i) + 5)) && (j < points.size()); j++) {
             pointsGroup.push_back(points[j]);
@@ -52,7 +52,7 @@ int verticalPartition(vector< pair<int, int> > &points, int p) {
    int j = (points.size() - 1);
 
    while (true) {
-   	  while ((i < points.size()) && (points[i].first <= points[0].first)) {
+      while ((i < points.size()) && (points[i].first <= points[0].first)) {
          i++;
       } // while
       
@@ -60,11 +60,11 @@ int verticalPartition(vector< pair<int, int> > &points, int p) {
          j--;
       } // while
    	  
-   	  if (j < i) {
-   	  	break;
-   	  } else {
-        swap(points[i], points[j]);
-   	  } // if
+      if (j < i) {
+   	     break;
+      } else {
+         swap(points[i], points[j]);
+      } // if
    } // while
 
    swap(points[0], points[j]);
@@ -78,7 +78,7 @@ int horizontalPartition(vector< pair<int, int> > &points, int p) {
    int j = (points.size() - 1);
 
    while (true) {
-   	  while ((i < points.size()) && (points[i].second <= points[0].second)) {
+      while ((i < points.size()) && (points[i].second <= points[0].second)) {
          i++;
       } // while
       
@@ -86,11 +86,11 @@ int horizontalPartition(vector< pair<int, int> > &points, int p) {
          j--;
       } // while
    	  
-   	  if (j < i) {
-   	  	break;
-   	  } else {
-        swap(points[i], points[j]);
-   	  } // if
+      if (j < i) {
+   	     break;
+      } else {
+         swap(points[i], points[j]);
+      } // if
    } // while
 
    swap(points[0], points[j]);
@@ -112,14 +112,14 @@ pair<int, int> quickSelect(vector< pair<int, int> > &points,
       verticalPartition(points, p): horizontalPartition(points, p);
 
    if (i == k) {
-   	  return points[i];
+      return points[i];
    } else if (i > k) {
-   	  vector< pair<int, int> > leftPoints;
-   	  for (int n = 0; n < i; n++) {
+      vector< pair<int, int> > leftPoints;
+      for (int n = 0; n < i; n++) {
          leftPoints.push_back(points[n]);
-   	  } // for
+      } // for
    	  
-   	  return quickSelect(leftPoints, k, splitDirection);
+      return quickSelect(leftPoints, k, splitDirection);
    } else {
    	  vector< pair<int, int> > rightPoints;
    	  for (int n = (i + 1); n < points.size(); n++) {
