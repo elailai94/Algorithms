@@ -31,7 +31,7 @@ int choosePivot(vector< pair<pair<int, int>, int> > &points) {
       // Creates a vector of medians from vectors of 5 points
       vector< pair< pair<int, int>, int> > medians;
       for (int i = 0; i <= m; i++) {
-   	 // Creates a vector of 5 points
+   	     // Creates a vector of 5 points
          vector< pair<pair<int, int>, int> > pointsGroup;
          for (int j = (5 * i); (j < ((5 * i) + 5)) && (j < points.size()); j++) {
             pointsGroup.push_back(points[j]);
