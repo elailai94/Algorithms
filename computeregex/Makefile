@@ -3,7 +3,7 @@
 #
 #   @description: Makefile for computeregex.py
 #   @author: ahlai
-#   @version: 0.0.1 08/10/2017
+#   @version: 0.0.1 08/10/2016
 # =============================================================================
 
 all:
