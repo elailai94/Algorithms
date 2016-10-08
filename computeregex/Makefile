@@ -8,8 +8,8 @@
 
 all:
 		@echo "Granting file execution permissions..."
-		chmod +x reg
+		chmod +x computeregex.py
 
 run: all
 		@echo "Running..."
-		./reg
+		./computeregex.py
