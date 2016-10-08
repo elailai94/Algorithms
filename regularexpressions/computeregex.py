@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # =============================================================================
-#   CS 341 Problem Set 5, Problem 1
+#   Computeregex
 #
 #   @description: Program for computing regular expressions for B(n, k)
 #   @author: ahlai
