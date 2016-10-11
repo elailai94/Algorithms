@@ -13,3 +13,8 @@ all:
 run: all
 		@echo "Running..."
 		./computeregex.py
+
+clean:
+		@echo "Cleaning..."
+		find . -name '*.pyc' -delete
+		find . -name '*.pyo' -delete
