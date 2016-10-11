@@ -16,6 +16,7 @@ run: all
 
 clean:
 		@echo "Cleaning..."
-		find . -name '*.pyc' -delete
-		find . -name '*.pyo' -delete
+		find . -name "*.pyc" -delete
+		find . -name "*.pyo" -delete
+		find . -name "__pycache__" -delete
 
