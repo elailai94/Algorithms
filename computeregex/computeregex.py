@@ -4,7 +4,7 @@
 #   Computeregex
 #
 #   @description: Program for computing regular expressions for B(n, k)
-#   @author: ahlai
+#   @author: Elisha Lai
 #   @version: 0.0.1 08/10/2016
 # =============================================================================
 
