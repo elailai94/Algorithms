@@ -67,5 +67,5 @@ def main():
         print(regex)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
