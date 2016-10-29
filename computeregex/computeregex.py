@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 # =============================================================================
-#   Computeregex
+#  Computeregex
 #
-#   @description: Program for computing regular expressions for B(n, k)
-#   @author: Elisha Lai
-#   @version: 0.0.1 08/10/2016
+#  @description: Program for computing regular expressions for B(n, k)
+#  @author: Elisha Lai
+#  @version: 0.0.1 08/10/2016
 # =============================================================================
 
 import math
