@@ -1,9 +1,9 @@
 //==============================================================================
 // Report
 //
+// @author: Elisha Lai
 // @description: Program for printing out the integers in a heap greater than
 //    or equal to an integer
-// @author: Elisha Lai
 // @version: 0.0.1 02/11/2015
 //==============================================================================
 
