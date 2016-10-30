@@ -7,15 +7,17 @@
 # =============================================================================
 
 all:
-		@echo "Granting file execution permissions..."
-		chmod +x compute_regex.py
+	@echo "Granting file execution permissions..."
+	chmod +x compute_regex.py
 
 run: all
-		@echo "Running..."
-		./compute_regex.py
+	@echo "Running..."
+	./compute_regex.py
+
+.PHONY: clean
 
 clean:
-		@echo "Cleaning..."
-		find . -name "*.pyc" -delete
-		find . -name "*.pyo" -delete
-		find . -name "__pycache__" -delete
+	@echo "Cleaning..."
+	find . -name "*.pyc" -delete
+	find . -name "*.pyo" -delete
+	find . -name "__pycache__" -delete
