@@ -3,8 +3,8 @@
 # =============================================================================
 #  Computeregex
 #
-#  @description: Program for computing regular expressions for B(n, k)
 #  @author: Elisha Lai
+#  @description: Program for computing regular expressions for B(n, k)
 #  @version: 0.0.1 08/10/2016
 # =============================================================================
 
