@@ -1,5 +1,5 @@
 //==============================================================================
-// Kdpartition
+// Kd-tree Partition
 //
 // @description: Program for printing out a set of (x,y) points in the order
 //    they are visited during an in-order traversal of the kd-tree
