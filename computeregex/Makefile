@@ -8,15 +8,14 @@
 
 all:
 		@echo "Granting file execution permissions..."
-		chmod +x computeregex.py
+		chmod +x compute_regex.py
 
 run: all
 		@echo "Running..."
-		./computeregex.py
+		./compute_regex.py
 
 clean:
 		@echo "Cleaning..."
 		find . -name "*.pyc" -delete
 		find . -name "*.pyo" -delete
 		find . -name "__pycache__" -delete
-
