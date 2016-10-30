@@ -1,9 +1,9 @@
 //==============================================================================
 // Kd-tree Partition
 //
+// @author: Elisha Lai
 // @description: Program for printing out a set of (x,y) points in the order
 //    they are visited during an in-order traversal of the kd-tree
-// @author: Elisha Lai
 // @version: 0.0.1 19/11/2015
 //==============================================================================
 
