@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 
 # =============================================================================
-#  Two armed bandit
+#  Two-armed Bandit
 #
+#  @author: Elisha Lai
 #  @description: Program for computing the greedy choice, optimal reward,
 #     optimal choice or greedy reward for a two-armed bandit
-#  @author: Elisha Lai
+#  @version: 1.0 30/10/2016
 # =============================================================================
 
 import sys
