@@ -6,7 +6,7 @@
 #  @author: Elisha Lai
 #  @description: Program for computing the greedy choice, optimal reward,
 #     optimal choice or greedy reward for a two-armed bandit
-#  @version: 1.0 30/10/2016
+#  @version: 0.0.1 30/10/2016
 # =============================================================================
 
 import sys
