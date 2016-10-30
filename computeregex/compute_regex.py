@@ -18,7 +18,7 @@ def concat(x, y):
 
 
 # Returns the regular expression for B(n, k)
-def computeregex(n, k):
+def compute_regex(n, k):
     if k == 0:
         return n * "0"
     elif n == k:
@@ -26,29 +26,29 @@ def computeregex(n, k):
     elif n < k:
         return ""
     else:
-        leftsubregexn = int(math.floor(n / 2.0))
-        rightsubregexn = int(math.ceil(n / 2.0))
-        retregex = ""
-        numofsubregexes = 0
+        left_subregex_n = int(math.floor(n / 2.0))
+        right_subregex_n = int(math.ceil(n / 2.0))
+        ret_regex = ""
+        num_of_subregexes = 0
 
         for i in range(k + 1):
-            leftsubregex = computeregex(leftsubregexn, i)
-            rightsubregex = computeregex(rightsubregexn, k - i)
+            left_subregex = compute_regex(left_subregex_n, i)
+            right_subregex = compute_regex(right_subregex_n, k - i)
 
-            if leftsubregex != "" and rightsubregex != "":
-                mergedregex = concat(leftsubregex, rightsubregex)
+            if left_subregex != "" and right_subregex != "":
+                merged_regex = concat(left_subregex, right_subregex)
 
-                if numofsubregexes > 0:
-                    mergedregex = concat("+", mergedregex)
+                if num_of_subregexes > 0:
+                    merged_regex = concat("+", merged_regex)
 
-                retregex = concat(retregex, mergedregex)
-                numofsubregexes += 1
+                ret_regex = concat(ret_regex, merged_regex)
+                num_of_subregexes += 1
 
-        if numofsubregexes > 1:
-            retregex = concat("(", retregex)
-            retregex = concat(retregex, ")")
+        if num_of_subregexes > 1:
+            ret_regex = concat("(", ret_regex)
+            ret_regex = concat(ret_regex, ")")
 
-        return retregex
+        return ret_regex
 
 
 def main():
@@ -58,7 +58,7 @@ def main():
         line = line.strip()
         n = int(line.split()[0])
         k = int(line.split()[1])
-        regex = computeregex(n, k)
+        regex = compute_regex(n, k)
         if regex.startswith("(") and regex.endswith(")"):
             regex = regex[1:-1]
         regexes.append(regex)
