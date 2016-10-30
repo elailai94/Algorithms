@@ -5,34 +5,19 @@
 # @description: Makefile for kdpartition.cpp
 # @version: 0.0.1 24/09/2015
 # ==============================================================================
-NAME = "breakout"
-
-# Add $(MAC_OPT) to the compile line for Mac OSX.
-MAC_OPT = "-I/opt/X11/include"
 
 all:
 	@echo "Compiling..."
-	g++ -o $(NAME) $(NAME).cpp -L/usr/X11R6/lib -lX11 -lstdc++ $(MAC_OPT)
+	g++ -Wall -MMD -o kdpartition kdpartition.cpp
+	@echo "Granting file execution permissions..."
+	chmod +x kdpartition
 
 run: all
 	@echo "Running..."
-	./$(NAME) 
-
-clean:
-	-rm $(NAME)
-
-CXX = g++
-CXXFLAGS = -Wall -MMD
-EXEC = kdpartition
-OBJECTS = kdpartition.o
-DEPENDS = ${OBJECTS:.o=.d}
-
-${EXEC}: ${OBJECTS}
-	${CXX} ${CXXFLAGS} ${OBJECTS} -o ${EXEC}
-
--include ${DEPENDS}
+	./kdpartition 
 
 .PHONY: clean
 
 clean:
-	rm ${OBJECTS} ${EXEC} ${DEPENDS}
+	@echo "Cleaning..."
+	rm kdpartition
